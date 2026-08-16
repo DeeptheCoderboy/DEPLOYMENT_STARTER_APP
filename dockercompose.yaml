@@ -1,0 +1,14 @@
+services:
+  backend:
+    build:
+      context: ./Backend
+    ports:
+      - "7000:8000"
+
+  frontend:
+    build:
+      context: ./Frontend/vite-project
+    ports:
+      - "8000:5173"
+    depends_on:
+      - backend
