@@ -14,4 +14,4 @@ app.add_middleware(
 )
 @app.get("/")
 def read_root():
-    return {"data": "World ! and Req comming From"}
+    return {"data": "Hi CICD is Implemented Here Succesfully"}
